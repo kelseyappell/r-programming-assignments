@@ -31,5 +31,8 @@ df_polls
 
 # Plot Data Frame #
 polls_plot <- ggplot(df_polls, aes(x = Name, y = Diff)) +
-              geom_col(fill = "#89CFF0", color = "blue")
+              geom_col(fill = "#89CFF0", color = "blue") +
+              labs(title = "Poll Discrepancy", 
+                   x = "Candidate", 
+                   y = "Difference")
 polls_plot
