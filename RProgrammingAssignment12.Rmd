@@ -1,0 +1,47 @@
+---
+title: "My R Markdown"
+author: "Kelsey Appell"
+date: "2025-11-16"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Introduction R Markdown
+
+R markdown is a formatted document available in HTML, PDF, and Word. This type of R document allows the creator to write in plain text and code. Code and text can be separated into chunks that are ran separately. This makes this type of document perfect for projects and collaborative work.
+
+## Narrative Paragraph
+```
+In this assignment, I will be displaying the various functions of R Markdown. In the first section, I showed how headers are displayed, with two pound signs in front of it. Any text below it will not be read as code. In this section, I am displaying the formar of Markdown text. In order for this to be shown as Markdown text, the text must be written between three back tick signs. In the next section, I will display how LaTex math expressions are executed. Lastly, I will show how executable code chunks are executed. 
+
+```
+
+## LaTex Math Expression
+Pythagorean Theorem In-Line:
+$ a^2 + b^2 = c^2 $
+
+Pythagorean Theorem Displayed: 
+$$
+a^2 + b^2 = c^2
+$$
+## Executable R Code Chunks
+Load mtcars and ggplot2 & create a graph
+```{r}
+cars <- mtcars
+library(ggplot2)
+```
+
+```{r}
+wt_mpg <- ggplot(cars, aes(x = wt, y = mpg)) +
+  geom_point()
+wt_mpg
+```
+
+## Reflection 
+```
+The RMarkdown workflow is wonderful! It is much better than writing plain reports because everything is included in one document. This format is very interactive and detailed. It is very easy to follow as well. In my data and text mining class, we use R Markdown for all of our labs and it has been my favorite way to do R coding homework. I really enjoy how the elements of the code can be separated and explained in a neat fashion. In a plain report, it takes much more work to make everything look neat and tidy. There is a lot of copying, pasting, and formatting needed to do so. In RMarkdown, there is no need for all of that because the coding, plotting, and formatting can all be done in the document with minimal steps. 
+
+```
